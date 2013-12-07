@@ -1,2 +1,4 @@
 bundle/
-.newrwhist
+bundle.pathogen/
+autoload.pathogen/
+.netrwhist
