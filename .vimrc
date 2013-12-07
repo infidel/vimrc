@@ -14,6 +14,8 @@ Bundle 'gmarik/vundle'
 
 " Bundles that I have selected
 Bundle 'scrooloose/nerdtree'
+Bundle 'mfukar/robotframework-vim'
+Bundle 'techlivezheng/vim-plugin-minibufexpl'
 
 syntax on
 filetype on
