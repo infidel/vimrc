@@ -16,10 +16,12 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'techlivezheng/vim-plugin-minibufexpl'
+Bundle 'chase/vim-ansible-yaml'
 
 syntax on
 filetype on
 "filetype plugin indent on
+filetype indent on
 
 "set background=dark
 
