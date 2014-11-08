@@ -17,10 +17,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'techlivezheng/vim-plugin-minibufexpl'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'def-lkb/ocp-indent-vim'
 
 syntax on
 filetype on
-"filetype plugin indent on
+filetype plugin on
 filetype indent on
 
 "set background=dark
@@ -46,4 +47,10 @@ set foldlevel=99
 map <Leader>n :NERDTreeToggle<CR>
 
 let g:miniBufExplCheckDupeBufs = 0
+
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+execute "set rtp+=" . g:opamshare . "/merlin/vimbufsync"
+
+set omnifunc=syntaxcomplete#Complete
 
