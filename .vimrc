@@ -54,3 +54,7 @@ execute "set rtp+=" . g:opamshare . "/merlin/vimbufsync"
 
 set omnifunc=syntaxcomplete#Complete
 
+let g:ocp_indent_args = ["--syntax", "lwt"]
+
+map <F7> :make<CR>
+
