@@ -5,19 +5,19 @@ filetype off
 "call pathogen#helptags()
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-" Commands: :BundleInstall :BundleUpdate :BundleClean
+Plugin 'VundleVim/Vundle.vim'
 
-" Bundles that I have selected
-Bundle 'scrooloose/nerdtree'
-Bundle 'mfukar/robotframework-vim'
-Bundle 'techlivezheng/vim-plugin-minibufexpl'
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'def-lkb/ocp-indent-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mfukar/robotframework-vim'
+Plugin 'techlivezheng/vim-plugin-minibufexpl'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'def-lkb/ocp-indent-vim'
+
+call vundle#end()
 
 syntax on
 filetype on
